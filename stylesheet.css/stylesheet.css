@@ -1,0 +1,637 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabeça {
+  max-width: 1100px;
+  width: 964px;
+  margin: auto;
+}
+
+.corpopagina {
+  max-width: 1100px;
+  width: 970px;
+  margin: auto;
+  border-width: 5px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+:root {
+  --cor1: #060afa;
+  --cor2: #1154cf;
+  --cor3: #239fe7;
+  --cor4: #0fc3f0;
+  --cor5: #08fd5a;
+  --cor6: #fc9393;
+  --cor7: #f510e2;
+  --cor8: #e7e574;
+  --cor9: rgb(62, 247, 56);
+}
+
+/* container paginas pag 1 inicial*/
+.container {
+  background-image: url("../img/cacimba2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  background-position: center;
+  border-width: 3px;
+  border-style: ridge;
+  Border-color: #100792;
+  align-items: center;
+  justify-content: center;
+}
+
+/* foto logo site*/
+.foto-legenda {
+  width: 15%;
+  display: flex;
+  border: 10px solid;
+  border-style: double;
+  background-image: linear-gradient(to bottom, var(--cor6), var(--cor9));
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+/* menu inicial*/
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-style: ridge;
+  Border-color: #100792;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #dfc8c2, #704405);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1.50em;
+}
+
+/* menu inicial*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* menu inicial*/
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+/* menu inicial*/
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 35px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* menu inicial*/
+#menu-toggle {
+  display: none;
+}
+
+/* menu inicial*/
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+/* menu inicial*/
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+/* menu inicial*/
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+/* menu inicial*/
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+/* menu inicial*/
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* menu inicial*/
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+/* letras inicio do site pag1*/
+.empresa {
+  display: grid;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  color: rgb(43, 32, 3);
+  font-size: 1.20em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:
+    1px -1px 0 #e6e9eb,
+    1px -1px 0 #dde5ec,
+    3px -3px 0 #2d5880,
+    4px -4px 0 #2b557c,
+    3px -3px 0 #2a5378;
+}
+
+/* titulo noticias pag1*/
+.titulo-noticias {
+  padding-left: 15%;
+  font-size: 2em;
+  color: hsl(105, 14%, 95%);
+}
+
+/* imagen tituo noticas pag1 */
+.titulo-noticias {
+  background-image: url("../img/fundo\ site.jpg");
+  background-size: cover;
+}
+
+/*noticias pagina1*/
+.carnasat {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+}
+
+/*imagens pag1*/
+.carnasat-foto {
+  width: 350px;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/*footer pagina1*/
+.gpssatelite {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+/*menu radape pagina1*/
+.menurodape {
+  list-style: none;
+  display: block;
+  position: relative;
+  width: 2%;
+  height: 20%;
+  left: 8%;
+}
+
+/*rodape pag1*/
+.rodape {
+  background-image: url("../img/satelite.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  height: auto;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+  height: 100vh;
+}
+
+/*começo da pagina de lanches*/
+
+/*container dos lanches*/
+.container2 {
+  background-image: url("../img/fundo\ site.jpg");
+  display: grid;
+  border-width: 5px;
+  border-style: ridge;
+  Border-color: #100792;
+  grid-template-columns: 50px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 15px;
+}
+
+/* conteudo dos lanches*/
+.conteudoanuncios {
+  color: hsl(105, 14%, 95%);
+  display: flex;
+  right: 10%;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/* body pagina lanches */
+.comida1 {
+  order: 1;
+  width: 200px;
+  height: 150px;
+  display: block;
+  align-items: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* body pagina lanches */
+.comida2 {
+  order: 2;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* body pagina lanches */
+.comida3 {
+  order: 3;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* body pagina lanches */
+.comida4 {
+  order: 4;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+
+}
+
+/* body pagina lanches */
+.comida5 {
+  order: 5;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* body pagina lanches */
+.comida6 {
+  order: 6;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* body pagina lanches */
+.serviço1 {
+  display: flex;
+  order: 7;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* body pagina lanches */
+.serviço2 {
+  display: flex;
+  order: 8;
+  width: 200px;
+  height: 150px;
+  display: block;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+
+}
+
+/* body pagina lanches */
+figcaption {
+  position: relative;
+  font-size: 0.30em;
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+/*body pagina lanches titulo pagina lanches*/
+.corpo2 {
+  background-image: url("../img/fundo\ site.jpg");
+}
+
+/* inicio pagina bares */
+/*body pagina bares*/
+
+.corpo {
+  background-image: url("../img/fundo\ site.jpg");
+}
+
+
+/* div bares satelite */
+.baressatelite {
+  display: flex;
+  justify-content: center;
+}
+
+/*discrição bares do satelite texto */
+.iniciobares {
+  padding-top: 1%;
+  color: hsl(105, 14%, 95%);
+  font-size: 1.2em;
+}
+
+/*fotos dos bares*/
+.bardodonone {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.discriçãobardanone {
+  padding-top: 1%;
+  color: hsl(105, 14%, 95%);
+  font-size: 2em;
+  justify-content: center;
+  display: flex;
+}
+
+.bardododanonefoto1 {
+  width: 100%;
+  height: 200px;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+.bardodanonefoto2 {
+  width: 100%;
+  height: 200px;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+.bardodanonefoto3 {
+  width: 100%;
+  height: 200px;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* bare castanhola*/
+.baresdosatelite2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bardacastanhola {
+  padding-top: 5px;
+  display: flex;
+  padding-left: 10%;
+}
+
+.bardacastanholatexto {
+  color: hsl(105, 14%, 95%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.bardacastanholafoto1 {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+.bardacastanholafoto2 {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+/* rodape */
+.rodape {
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-columns: 1fr;
+  height: 300px;
+}
+
+/* rodape */
+.gpssatelite {
+  border-width: 15px;
+  justify-content: center;
+}
+
+.videossatelite {
+  display: flex;
+  justify-content: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+  background-image: url("../img/fundo\ site.jpg");
+}
+
+.OPÇÃODELAZER {
+  font-size: 1.01em;
+  color: #e6e9eb;
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  background-image: url("../img/fundo\ site.jpg");
+}
+
+.CACIMBA {
+  width: 200px;
+  height: 150px;
+  display: block;
+  justify-content: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+.PARQUEIGARAPES {
+  width: 200px;
+  height: 150px;
+  display: block;
+  justify-content: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+}
+
+.menurodape {
+  position: relative;
+  height: 0.5rem;
+  width: 0.1rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 75vh;
+  right: 5vw;
+  z-index: 1500;
+  box-shadow: 0 1rem 3rem black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.divulgar {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  border-width: 15px;
+  border-style: ridge;
+  Border-color: #100792;
+
+}
+
+/* rodape */
+.rodape {
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-columns: 1fr;
+  height: 300px;
+}
+
+/* rodape */
+.gpssatelite {
+  border-width: 15px;
+  justify-content: center;
+}
+
+
+@media (max-width: 1250px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container2 {
+    background-image: url("../img/fundo\ site.jpg");
+    display: grid;
+    border-width: 5px;
+    border-style: ridge;
+    Border-color: #100792;
+    grid-template-columns: 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .container2 {
+    background-image: url("../img/fundo\ site.jpg");
+    display: grid;
+    border-width: 5px;
+    border-style: ridge;
+    Border-color: #100792;
+    grid-template-columns: 50px 50px;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
